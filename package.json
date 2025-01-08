@@ -9,7 +9,7 @@
     "lint": "next lint",
     "setup": "npm i --legacy-peer-deps && npx husky",
     "check-types": "tsc",
-    "success-message": "echo '\n🚀  Everything is awesome. 🚀\n\n🖥️  Auto checking completed, ready to deploy.🖥️\n\n☁️  Run: git push ☁️'"
+    "success-message": "echo '🚀  Everything is awesome. 🚀🖥️  Auto checking completed, ready to deploy.🖥️☁️  Run: git push ☁️'"
   },
   "dependencies": {
     "axios": "^1.7.9",
