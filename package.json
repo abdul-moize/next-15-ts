@@ -6,20 +6,35 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "setup": "npm i --legacy-peer-deps && npx husky",
+    "check-types": "tsc",
+    "success-message": "echo '\n🚀  Everything is awesome. 🚀\n\n🖥️  Auto checking completed, ready to deploy.🖥️\n\n☁️  Run: git push ☁️'"
   },
   "dependencies": {
+    "next": "15.1.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.4"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9.17.0",
+    "@next/eslint-plugin-next": "^15.1.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.4",
-    "@eslint/eslintrc": "^3"
+    "@typescript-eslint/eslint-plugin": "^8.19.1",
+    "eslint": "^9.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-next": "^15.1.4",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^3.3.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.1"
   }
 }
