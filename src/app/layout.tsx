@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono as GeistMono } from 'next/font/google';
 import './globals.css';
 import { ReactNode } from 'react';
+import { Initializer } from '../components/initializer/initializer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -24,7 +25,9 @@ export default function RootLayout({ children }: Readonly<{
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <Initializer>
+          {children}
+        </Initializer>
       </body>
     </html>
   );
